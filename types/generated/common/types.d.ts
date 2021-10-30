@@ -1708,6 +1708,7 @@ declare global {
   type StoreSessionStoreToken = {
     expiresAt: Date;
     revokedAt?: undefined | Date;
+    createdAt: Date;
     id: string;
     session: string;
     refreshToken?: undefined | string;
@@ -1859,12 +1860,14 @@ declare global {
     expiresAt: Date;
     refreshToken?: undefined | null | string;
     revokedAt?: undefined | null | Date;
+    createdAt: Date;
   };
   type StoreSessionStoreTokenUpdatePartial = {
     session?: undefined | string;
     expiresAt?: undefined | Date;
     refreshToken?: undefined | null | string;
     revokedAt?: undefined | null | Date;
+    createdAt?: undefined | Date;
   };
   type StoreSessionQueryBuilder = {
     where?: undefined | StoreSessionWhere;
