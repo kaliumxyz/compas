@@ -1696,6 +1696,7 @@ declare global {
   };
   type StoreSessionStore = {
     data: any;
+    revokedAt?: undefined | Date;
     id: string;
     createdAt: Date;
     updatedAt: Date;
@@ -1845,11 +1846,13 @@ declare global {
   };
   type StoreSessionStoreInsertPartial = {
     id?: undefined | string;
+    revokedAt?: undefined | null | Date;
     data?: undefined | any;
     createdAt?: undefined | Date;
     updatedAt?: undefined | Date;
   };
   type StoreSessionStoreUpdatePartial = {
+    revokedAt?: undefined | null | Date;
     data?: undefined | any;
     createdAt?: undefined | Date;
     updatedAt?: undefined | Date;
