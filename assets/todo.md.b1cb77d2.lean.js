@@ -1,0 +1,1 @@
+import{_ as i,c as l,o as e,a as t}from"./app.d0d65fcc.js";const y='{"title":"TODO","description":"","frontmatter":{},"relativePath":"todo.md","lastUpdated":1635769453832}',s={},o=t('',7),r=[o];function n(a,u,p,c,d,m){return e(),l("div",null,r)}var h=i(s,[["render",n]]);export{y as __pageData,h as default};
